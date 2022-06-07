@@ -1,0 +1,19 @@
+# *******************************************************************************************
+#  File:  core.toml
+#
+#  Created: 29-04-2022
+#
+#  Description: This file defines the logging configuration
+#
+#  Copyright (c) 2022 James Dooley <james@dooley.ch>
+#
+#  History:
+#  29-04-2022: Initial version
+#
+# *******************************************************************************************
+
+version = '1.0.1'
+
+[composition]
+    includes = ['logging', 'db']
+    overrides = {db = 'db-dev'}
